@@ -1,0 +1,407 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{22477607-6F26-457D-BD86-8EC26568B914}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WindowsFormsApp2</RootNamespace>
+    <AssemblyName>обозреватель</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <PublishUrl>publish\1\</PublishUrl>
+    <Install>false</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>21</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>F499F405FFF2118CF7BE7FFD3AB0179D478B458D</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>WindowsFormsApp2_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BD.Designer.cs">
+      <DependentUpon>BD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Find.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.Designer.cs">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form5.Designer.cs">
+      <DependentUpon>Form5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form6.Designer.cs">
+      <DependentUpon>Form6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kalculator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kalculator.Designer.cs">
+      <DependentUpon>kalculator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kalk.cs" />
+    <Compile Include="MessageBoxManager.cs" />
+    <Compile Include="MovedDvD.cs" />
+    <Compile Include="news.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="news.Designer.cs">
+      <DependentUpon>news.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Rsa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rsa.Designer.cs">
+      <DependentUpon>Rsa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RSA0_0.cs" />
+    <Compile Include="Sbuttons.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="testirovschik.cs" />
+    <Compile Include="TextEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TextEdit.Designer.cs">
+      <DependentUpon>TextEdit.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="BD.resx">
+      <DependentUpon>BD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form5.resx">
+      <DependentUpon>Form5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form6.resx">
+      <DependentUpon>Form6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kalculator.resx">
+      <DependentUpon>kalculator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="news.resx">
+      <DependentUpon>news.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Rsa.resx">
+      <DependentUpon>Rsa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TextEdit.resx">
+      <DependentUpon>TextEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="..\.editorconfig">
+      <Link>.editorconfig</Link>
+    </None>
+    <None Include="App.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="WindowsFormsApp2_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\photo_2022-02-21_20-42-39.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\photo_2022-03-01_23-29-52.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\photo_2022-03-01_23-29-56.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Без имени-1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GwU1q.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\38b467648fbd4e2cfae1c0e600adbdeb.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\евангелион.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\стрелка%28вверх%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\стрелка%28вправо%29.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\стрелка%28вниз%29.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\стрелка%28вниз%291.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\стрелка%28внизОл%29.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\поздравление.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8м_1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8м_2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8м_3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8м_4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8м_5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\поле кр.нол.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\поле кр.нол1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\поле кр.нолл.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\поле кр.нолл1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\поле кр.нол2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\поле кр.нолл2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\фонр.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\поле кр.нол3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\черта.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\черта-диагональ.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\пицца.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\кр-нол обл.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\кр-нол обл1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\настройки.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\настройки-аква.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\настройки1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\чудачество.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\травка.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Джейк.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Джейк1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Джейк2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\корень.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\фон%28тестировщик%29.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\фон%28тест%29.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\фон_тестик.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\фон_тестик1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\фон_тестик11.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\фон_тестик1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\фон_тестик12.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\тестик.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\оценка2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\оценка3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\оценка4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\оценка5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\оценка21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\оценка31.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\оценка41.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\оценка51.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\фон_рса.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\фон_рса1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\фон_рса.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Database1.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Database1_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>Database1.mdf</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
